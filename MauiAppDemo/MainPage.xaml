@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppDemo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            WidthRequest="350"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+
+            <HorizontalStackLayout HeightRequest="40">
+                <Label FontSize="24" WidthRequest="100">First: </Label>
+                <Entry x:Name="textBoxFirst" FontSize="24" WidthRequest="250"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HeightRequest="40">
+                <Label FontSize="24" WidthRequest="100">Second:</Label>
+                <Entry x:Name="textBoxSecond" FontSize="24" WidthRequest="250" />
+            </HorizontalStackLayout>
+
+
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button x:Name="buttonAdd" HeightRequest="65" WidthRequest="65" FontSize="24" Text="+" Clicked="buttonAdd_Clicked" />
+                <Button x:Name="buttonSubtract" HeightRequest="65" WidthRequest="65" FontSize="24" Text="-" Clicked="buttonSubtract_Clicked" />
+                <Button x:Name="buttonMultiply" HeightRequest="65" WidthRequest="65" FontSize="24" Text="*" Clicked="buttonMultiply_Clicked" />
+                <Button x:Name="buttonDivide" HeightRequest="65" WidthRequest="65" FontSize="24" Text="/" Clicked="buttonDivide_Clicked" />
+                <Button x:Name="buttonModulus" HeightRequest="65" WidthRequest="65" FontSize="24" Text="%" Clicked="buttonModulus_Clicked" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HeightRequest="40">
+                <Label FontSize="24" WidthRequest="100">Result:</Label>
+                <Entry x:Name="textBoxResult" FontSize="24" WidthRequest="250"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
